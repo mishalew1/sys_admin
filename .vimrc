@@ -1,14 +1,30 @@
-" show line numbers
-:set number
+" Sets line numbers
+set number
 
-" highlight searches
-:set hlsearch
+" Titles
+set title
 
-" ignore case when searching
-:set ignorecase
+" Ignore case when searching
+set ignorecase
 
-" auto switch to case sensitive when using a Capital
-:set smartcase
+" When searching try to be smart about cases 
+set smartcase
 
-" set window title to file currently being edited
-:set title
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch 
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" :W sudo saves the file 
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
