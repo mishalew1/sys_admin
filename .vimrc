@@ -1,6 +1,11 @@
 syntax on
 colorscheme desert
 
+" Solarized color scheme, needs to be downloaded and installed first
+"set background=dark
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
 " Sets line numbers
 set number
 
