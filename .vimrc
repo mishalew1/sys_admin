@@ -1,21 +1,10 @@
+" Turns on syntax colors
 syntax on
-
-" Gruvbox colorscheme, neds to be downloaded and installed first
-set background=dark
-colorscheme gruvbox
-
-" Desert colorscheme, preinstalled
-"colorscheme desert
-
-" Solarized color scheme, needs to be downloaded and installed first
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
 
 " Sets line numbers
 set number
 
-" Titles
+" Sets title in window title bar
 set title
 
 " Ignore case when searching
@@ -42,3 +31,18 @@ set tm=500
 
 " :W sudo saves the file 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+" Slate colorscheme, preinstalled
+colorscheme slate
+
+" Desert colorscheme, preinstalled
+"colorscheme desert
+
+" Gruvbox colorscheme, neds to be downloaded and installed first
+"set background=dark
+"colorscheme gruvbox
+
+" Solarized color scheme, needs to be downloaded and installed first
+"set background=dark
+"let g:solarized_termcolors=256
+"colorscheme solarized
