@@ -1,3 +1,6 @@
+syntax on
+colorscheme desert
+
 " Sets line numbers
 set number
 
