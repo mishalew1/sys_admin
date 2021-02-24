@@ -1,5 +1,11 @@
 syntax on
-colorscheme desert
+
+" Gruvbox colorscheme, neds to be downloaded and installed first
+set background=dark
+colorscheme gruvbox
+
+" Desert colorscheme, preinstalled
+"colorscheme desert
 
 " Solarized color scheme, needs to be downloaded and installed first
 "set background=dark
