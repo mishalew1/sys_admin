@@ -1,0 +1,8 @@
+## Scan and find hosts on internal network (IP, MAC, Vendor)
+nmap -sn 192.168.2.0/24
+
+## Scan and try to figure out operating system
+nmap -O 192.168.2.20
+
+
+
