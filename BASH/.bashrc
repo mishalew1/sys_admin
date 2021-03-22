@@ -13,21 +13,8 @@ cyn='\[\033[01;36m\]'   # Cyan
 wht='\[\033[01;37m\]'   # White
 clr='\[\033[00m\]'      # Reset
 
-
-# Which (C)olour for what part of the prompt?
-pathC="${cyn}"
-gitC="${pur}"
-pointerC="${wht}"
-normalC="${rst}"
-
-# Get the name of our branch and put parenthesis around it
-gitBranch() {
-		    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
 # Build the prompt
-# export PS1="${pathC}\w ${gitC}\$(gitBranch) ${pointerC}\$${normalC} "
-
+export PS1="${grn}\u ${pur}\h ${blu}\w${wht}\$${clr} "
 
 
 # Find largest files example: Downloads $ find_largest_files
