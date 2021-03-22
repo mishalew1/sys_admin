@@ -1,0 +1,16 @@
+# test evaluates logical expressions
+# Syntax = test [ expression ]
+
+# Examples:
+# Test if file.txt is a file
+test -a file.txt; echo $?
+# or
+[ -a file.txt ]; echo $?
+
+
+# Test if string is empty
+string1=""
+test -z $string1; echo $?
+# or
+[ -z $string1 ]; echo $?
+
