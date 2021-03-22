@@ -45,7 +45,7 @@ function hg() {
 # Show contents of the directory after changing to it
 function cd () {
 		    builtin cd "$1"
-			    ls -ACF
+			    ls -AlF
 }
 
 
@@ -61,3 +61,4 @@ printf "   %s\n" "PACKAGES: $(dpkg --get-selections | wc -l)"
 printf "   %s\n" "RESOLUTION: $(xrandr | awk '/\*/{printf $1" "}')"
 printf "   %s\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
 printf "\n"
+
