@@ -28,6 +28,7 @@ alias gs="git status" 			# View Git status.
 alias ga="git add" 				# Add a file to Git.
 alias gaa="git add --all"		# Add all files to Git.
 alias gc="git commit" 			# Commit changes to the code.
+alias gp="git push" 			# push changes to remote repo
 alias gl="git log --oneline" 	# View the Git log.
 alias gb="git checkout -b" 		# Create a new Git branch and move to the new branch at the same time. 
 alias gd="git diff"  			# View the difference.
