@@ -33,10 +33,6 @@ alias gl="git log --oneline" 	# View the Git log.
 alias gb="git checkout -b" 		# Create a new Git branch and move to the new branch at the same time. 
 alias gd="git diff"  			# View the difference.
 
-# Remote access
-alias sshserver="ssh "
-alias sshpi="ssh "
-
 # Windows WSL configs
 alias nmap="/mnt/c/Program\ Files\ \(x86\)/Nmap/nmap.exe"
 
