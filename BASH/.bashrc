@@ -14,7 +14,12 @@ wht='\[\033[01;37m\]'   # White
 clr='\[\033[00m\]'      # Reset
 
 # Build the prompt
-export PS1="${grn}\u ${pur}\h ${blu}\w${wht}\$${clr} "
+function prompt_command {
+		RET=$?
+			export PS1=$(~/.bash_prompt_command $RET)
+}
+PROMPT_DIRTRIM=3
+export PROMPT_COMMAND=prompt_command
 
 
 # Find largest files example: Downloads $ find_largest_files

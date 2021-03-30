@@ -13,6 +13,11 @@ alias vimrc="vi ~/.vimrc"
 alias allusers="getent passwd {1000..60000}"
 alias update-grub="grub2-mkconfig -o /boot/grub2/grub.cfg"
 
+# SSH connections
+alias sshlist="sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' ~/.ssh/config"
+alias sshedit="vi ~/.ssh/config"
+alias sshkeys='for key in ~/.ssh/id_*; do ssh-keygen -l -f "${key}"; done | uniq'
+
 # networking
 alias myip="ip -o -4 a | awk {'printf (\"%-6s \t %s \n\", \$2, \$4)'} | grep -v 127.0.0.1"
 
@@ -32,10 +37,6 @@ alias gp="git push" 			# push changes to remote repo
 alias gl="git log --oneline" 	# View the Git log.
 alias gb="git checkout -b" 		# Create a new Git branch and move to the new branch at the same time. 
 alias gd="git diff"  			# View the difference.
-
-# Remote access
-alias sshserver="ssh "
-alias sshpi="ssh "
 
 # Windows WSL configs
 alias nmap="/mnt/c/Program\ Files\ \(x86\)/Nmap/nmap.exe"
