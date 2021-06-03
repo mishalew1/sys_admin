@@ -7,8 +7,11 @@ set number
 " Titles
 set title
 
-" set Tab to be 4 spaces wide
-set tabstop=4
+set expandtab " replace tabs with spaces
+set tabstop=4 " set Tab to be 4 spaces wide
+set autoindent " copy indent when starting a new line
+set softtabstop=4 "backspace or tab whitespace
+set shiftwidth=4  "indentation whitespace
 
 " Ignore case when searching
 set ignorecase
